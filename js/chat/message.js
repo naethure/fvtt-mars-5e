@@ -714,8 +714,7 @@ export default class Mars5eMessage extends ChatMessage {
             : !!result.closest(".blind, .mars5e-invisible-target")
             ? ChatMessage.getWhisperRecipients("GM")
             : undefined,
-        ],
-        this.item.actor
+        ]
       );
     }
     result.innerHTML = `<span class='result-total'>${roll.total}</span>`;

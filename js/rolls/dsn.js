@@ -1,8 +1,8 @@
-export async function rollDsN(dsnRolldata, actor) {
+export async function rollDsN(dsnRolldata) {
   if (!game.dice3d) return;
 
   if (
-    !actor.hasPlayerOwner &&
+    game.user.isGM &&
     game.settings.get("dice-so-nice", "hideNpcRolls")
   )
     return;

@@ -121,8 +121,7 @@ export default function initActorClass() {
           true,
           chatData.whisper || null,
           chatData.blind || null,
-        ],
-        this
+        ]
       );
 
       return CONFIG.ChatMessage.entityClass.create(chatData);
