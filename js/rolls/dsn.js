@@ -3,7 +3,6 @@ export async function rollDsN(dsnRolldata) {
 
   if (
     game.user.isGM &&
-    game.settings.get("dice-so-nice", "hideNpcRolls") &&
     game.settings.get("core", "rollMode") != "public"
   )
     return;
