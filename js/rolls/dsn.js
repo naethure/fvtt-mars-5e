@@ -3,7 +3,7 @@ export async function rollDsN(dsnRolldata) {
 
   if (
     game.user.isGM &&
-    game.settings.get("core", "rollMode") != "public"
+    game.settings.get("core", "rollMode") != "roll"
   )
     return;
   return game.dice3d.showForRoll(...dsnRolldata);
