@@ -31,21 +31,6 @@
     content: var(--mars5e-dis-label);
   }
 
-  &:before {
-    color: var(--mars5e-tooltip-font-color);
-    background: var(--mars5e-tooltip-bg-color);
-    position: absolute;
-    top: calc(50% + 1em);
-    right: 0;
-    font-size: 0.8em;
-
-    display: block;
-    padding: 0.5ch;
-    white-space: nowrap;
-    content: "( Right-Click to toggle (dis-)advantage )";
-    // transition: all $animation-duration #{$animation-delay * 2};
-    opacity: 0;
-  }
   &.right:before {
     right: unset;
     left: 0;
