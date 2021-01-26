@@ -57,7 +57,7 @@ Hooks.on("init", () => {
     },
   });
   Hooks.on("renderActorSheet", (app, html, options) => {
-    html[0].addEventListener(
+    /*html[0].addEventListener(
       "contextmenu",
       (ev) => {
         const target = ev.target.closest(classList);
@@ -70,7 +70,7 @@ Hooks.on("init", () => {
         tween.kill();
       },
       true
-    );
+    );*/
     html[0].addEventListener(
       "mouseenter",
       (ev) => {
@@ -110,7 +110,7 @@ Hooks.on("init", () => {
   });
 
   Hooks.on("renderHotbar", (app, html, options) => {
-    html[0].addEventListener(
+    /*html[0].addEventListener(
       "contextmenu",
       (ev) => {
         const target = ev.target.closest(classList);
@@ -120,7 +120,7 @@ Hooks.on("init", () => {
         tween.kill();
       },
       true
-    );
+    );*/
     html[0].addEventListener(
       "mouseenter",
       (ev) => {
