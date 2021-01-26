@@ -169,15 +169,15 @@ export default class Mars5eMessage extends ChatMessage {
       return ui.notifications.error(
         game.i18n.localize("MARS5E.errors.userNotOnline")
       );
-    if (this._toggleAdv(ev)) return;
+    //if (this._toggleAdv(ev)) return;
 
     if (!this._eventAllowed(ev)) return;
+
+    if (!game.user.isGM) return;
 
     if (this._toggleHit(ev)) return;
 
     if (this._toggleCrit(ev)) return;
-
-    if (!game.user.isGM) return;
 
     if (this._toggleResistance(ev)) return;
   }
